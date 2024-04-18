@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style_oficina.css">
+    <title>cadastro_cliente</title>
+</head>
+
+<body>
+    <header class="button_initial">
+        <button id="openMenu">&#9776;</button>
+        <nav id="menu">
+            <button id="closeMenu">x</button>
+            <a href="index.html"><i class="bi bi-house"></i>Home Oficina</a>
+            <a href="cadastro_veiculo.html"><i class="bi bi-car-front-fill"></i>Cadastro de Veículo</a>
+            <a href="relatorios.html"><i class="bi bi-file-earmark-spreadsheet"></i>Relatórios</a>
+            <a href="produto_estoque.html"><i class="bi bi-stack-overflow"></i>Produto & Estoque</a>
+            <a href="orcamentos.html"><i class="bi bi-cash-coin"></i>Orçamentos</a>
+            <a href="ordem_de_servicos.html"><i class="bi bi-wrench-adjustable"></i>Ordem de Serviços</a>
+        </nav>
+    </header>
+    <section class="menu-section" id="cadastro_cliente">
+        <fieldset>
+            <h2>Cadastro Cliente</h2>
+            <div class="form-grup">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" class="caixa-texto" id="nome" required>
+                <div>
+                    <label for="endereco">Endereco</label>
+                    <input type="text" name="endereco" class="caixa-texto" id="endereco" required>
+                </div>
+                <div><label for="cep">CEP</label>
+                    <input type="number" name="number" class="caixa-texto" id="cep" required>
+                </div>
+                <div>
+                    <label for="contato">Contato</label>
+                    <input type="number" name="contato" class="caixa-texto" id="contato" required>
+                </div>
+                <div>
+                    <label for="placa-veiculo">placa veículo</label>
+                    <input type="number" name="placa-veiculo" class="caixa-texto" id="placa-veiculo" required>
+                </div>
+            </div>
+            <div class="form-submit">
+                <input type="submit" value="salvar">
+                <input type="submit" value="editar">
+            </div>
+        </fieldset>
+    </section>
+    <a class="back-to-top" href="index.html"><i class="bi-house"></i></a>
+    <script type="text/javascript" src="oficina_menu.js">
+    </script>
+</body>
+
+</html>
