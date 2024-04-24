@@ -99,7 +99,7 @@ nav {
 }
 
 .main-bg {
-  background-image: url('img/bg-oficina.png');
+  background-image: url('bg-oficina.png');
   background-size: cover;
   background-position: center center;
   opacity: 1;
