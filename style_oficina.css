@@ -10,6 +10,7 @@ html {
   scroll-behavior: smooth;
 }
 
+
 a {
   font-size: 10px;
   text-align: center;
@@ -36,7 +37,7 @@ fieldset {
   border-radius: 5px;
   padding-left: 15px;
   padding-bottom: 140px;
-  height: 900px;
+  height: 860px;
   margin-top: 90px;
   color: black;
 }
@@ -199,6 +200,14 @@ nav {
   color: black;
   text-transform: uppercase;
   border: 0.1rem solid black;
+}
+#veiculos, #placas{
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  padding: 7px;
+  text-transform: uppercase;
+
 }
 
 @media (max-width: 900px) {
