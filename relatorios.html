@@ -31,6 +31,37 @@
 
         <fieldset>
             <h2>Relatórios</h2>
+            <div id="myChart" style="width:100%; max-width:600px; height:600px; margin: 0 20%; display:flex; float:right;">
+
+                <script>
+                    google.charts.load('current', { 'packages': ['corechart'] });
+                    google.charts.setOnLoadCallback(drawChart);
+
+                    function drawChart() {
+
+                        // Set Data
+                        const data = google.visualization.arrayToDataTable([
+                            ['Contry', 'Mhl'],
+                            ['Pecas Motos', 54.8],
+                            ['Pecas carros', 48.6],
+                            ['Servicos motos', 44.4],
+                            ['Servicoss carros', 23.9],
+                            ['Pneus', 14.5]
+                        ]);
+
+                        // Set Options
+                        const options = {
+                            title: 'Relatorios de manutenção abril',
+                            is3D: true
+                        };
+
+                        // Draw
+                        const chart = new google.visualization.PieChart(document.getElementById('myChart'));
+                        chart.draw(data, options);
+
+                    }
+                </script>
+            </div>
             <div class="form-grup" id="content">
                 <label for="nome-produto">Nome do Produto</label>
                 <input type="text" name="nome" class="caixa-texto" id="nome-produto" required>
@@ -55,43 +86,6 @@
                 <input type="submit" value="gerar"><input type="submit" value="imprimir pdf" id="generate-pdf"><input
                     type="submit" value="Salvar">
             </div>
-
-            <div id="myChart" style="width:100%; max-width:600px; height:500px; margin: 0 30%;">
-            </div>
-
-            <script>
-                google.charts.load('current', { 'packages': ['corechart'] });
-                google.charts.setOnLoadCallback(drawChart);
-
-                function drawChart() {
-
-                    // Set Data
-                    const data = google.visualization.arrayToDataTable([
-                        ['Contry', 'Mhl'],
-                        ['Pecas Motos', 54.8],
-                        ['Pecas carros', 48.6],
-                        ['Servicos motos', 44.4],
-                        ['Servicoss carros', 23.9],
-                        ['Pneus', 14.5]
-                    ]);
-
-                    // Set Options
-                    const options = {
-                        title: 'Relatorios de manutenção abril',
-                        is3D: true
-                    };
-
-                    // Draw
-                    const chart = new google.visualization.PieChart(document.getElementById('myChart'));
-                    chart.draw(data, options);
-
-                }
-            </script>
-
-
-
-
-
         </fieldset>
     </section>
     <a class="back-to-top" href="index.html"><i class="bi-house"></i></a>
