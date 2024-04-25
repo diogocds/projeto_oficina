@@ -44,7 +44,7 @@
                     <label for="contato">Contato</label>
                     <input type="number" name="contato" class="caixa-texto" id="contato" required>
                 </div>
-                <div class="form-select">
+                <div>
                     <form>
                         <label for="placa-veiculo">placa veículo</label>
                         <select name="placas" id="placas">
@@ -55,29 +55,40 @@
                                 <option value="placa">Gws0r00</option>
                         </select>
                     </form>
-                    <form>
-                        <label for="veiculos">Veículo</label>
-                        <select name="veiculos" id="veiculos">
-                            <optgroup label="Veiculos Volksvagen">
-                                <option value="volks">voyage</option>
-                                <option value="Volks">Gol</option>
-                                <option value="Volks">Polo</option>
-                                <option value="Volks">Golf</option>
-                                <option value="Volks">Jetta</option>
-                            </optgroup>
-                            <optgroup label="Veiculos Fiat">
-                                <option value="Fiat">Uno</option>
-                                <option value="Fiat">Mobi</option>
-                                <option value="Fiat">Siena</option>
-                                <option value="Fiat">Argo</option>
-                            </optgroup>
-                        </select>
-                    </form>
                 </div>
+                <form>
+                    <label for="veiculos">Veículo</label>
+                    <select name="veiculos" id="veiculos">
+                        <optgroup label="Veiculos Volksvagen">
+                            <option value="volks">voyage</option>
+                            <option value="Volks">Gol</option>
+                            <option value="Volks">Polo</option>
+                            <option value="Volks">Golf</option>
+                            <option value="Volks">Jetta</option>
+                        <optgroup label="Veiculos Fiat">
+                            <option value="Fiat">Uno</option>
+                            <option value="Fiat">Mobi</option>
+                            <option value="Fiat">Siena</option>
+                            <option value="Fiat">Argo</option>
+                        </optgroup>
+                    </select>
+                </form>
+                <form>
+                    <label for="servicos">Serviços</label>
+                    <select name="servicos" id="servicos">
+                        <optgroup label="servicos mecanicos">
+                            <option value="pecas">Troca de oleo</option>
+                            <option value="pecas">Troca de filtro de oleo</option>
+                            <option value="pecas">Troca de Bandeja</option>
+                            <option value="pecas">Revisao geral</option>
+                            <option value="pecas">Mao de Obra</option>
+                        </optgroup>
+                    </select>
+                </form>
             </div>
             <div class="form-submit">
                 <input type="submit" value="gerar"><input type="submit" value="imprimir pdf" id="generate-pdf"><input
-                    type="submit" value="Enviar">
+                    type="submit" value="Salvar">
             </div>
         </fieldset>
     </section>
