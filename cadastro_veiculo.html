@@ -26,26 +26,31 @@
         <fieldset>
             <h2>Cadastro veículo</h2>
             <div class="form-grup">
-                <label for="nome">Nome</label>
+                <label for="nome">Marca / Modelo</label>
                 <input type="text" name="nome" class="caixa-texto" id="nome" required>
                 <div>
-                    <label for="endereco">Endereco</label>
-                    <input type="text" name="endereco" class="caixa-texto" id="endereco" required>
+                    <label for="endereco">Placa do Veículo</label>
+                    <input type="numero" name="numero" class="caixa-texto" id="placa-veiculo" required>
                 </div>
                 <div>
-                    <label for="cep">CEP</label>
-                    <input type="number" name="number" class="caixa-texto" id="cep" required>
+                    <label for="nome">Ano do Veículo</label>
+                    <input type="date" name="date" class="caixa-texto" id="date" required>
                 </div>
                 <div>
                     <label for="contato">Contato</label>
                     <input type="number" name="contato" class="caixa-texto" id="contato" required>
                 </div>
                 <div>
-                    <label for="placa-veiculo">placa veículo</label>
-                    <input type="number" name="placa-veiculo" class="caixa-texto" id="placa-veiculo" required>
+                    <label for="nome">Proprietário</label>
+                    <input type="text" name="proprietario" class="caixa-texto" id="proprietario" required>
+                </div>
+                <div>
+                    <label for="file">CNH / Documento do Veículo <br></label>
+                    <input type="file" id="file" name="file" accept=".pdf, .svg,image/*">
                 </div>
             </div>
             <div class="form-submit">
+                <input type="submit" value="Cadastrar">
                 <input type="submit" value="salvar">
                 <input type="submit" value="editar">
             </div>

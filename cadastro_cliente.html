@@ -39,12 +39,39 @@
                     <label for="contato">Contato</label>
                     <input type="number" name="contato" class="caixa-texto" id="contato" required>
                 </div>
-                <div>
-                    <label for="placa-veiculo">placa veículo</label>
-                    <input type="number" name="placa-veiculo" class="caixa-texto" id="placa-veiculo" required>
+                <div class="form-select">
+                    <form>
+                        <label for="placa-veiculo">placa veículo</label>
+                        <select name="placas" id="placas">
+                            <optgroup label="placa-veiculo">
+                                <option value="placa">owd0o00</option>
+                                <option value="placa">qgk0i00</option>
+                                <option value="placa">qgj0000</option>
+                                <option value="placa">Gws0r00</option>
+                        </select>
+                    </form>
+                    <form>
+                        <label for="veiculos">Veículo</label>
+                        <select name="veiculos" id="veiculos">
+                            <optgroup label="Veiculos Volksvagen">
+                                <option value="volks">voyage</option>
+                                <option value="Volks">Gol</option>
+                                <option value="Volks">Polo</option>
+                                <option value="Volks">Golf</option>
+                                <option value="Volks">Jetta</option>
+                            </optgroup>
+                            <optgroup label="Veiculos Fiat">
+                                <option value="Fiat">Uno</option>
+                                <option value="Fiat">Mobi</option>
+                                <option value="Fiat">Siena</option>
+                                <option value="Fiat">Argo</option>
+                            </optgroup>
+                        </select>
+                    </form>
                 </div>
             </div>
             <div class="form-submit">
+                <input type="submit" value="Cadastrar">
                 <input type="submit" value="salvar">
                 <input type="submit" value="editar">
             </div>

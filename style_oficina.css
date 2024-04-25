@@ -69,6 +69,7 @@ nav {
   width: 100%;
   flex: 1 1 100vh;
   flex-wrap: wrap;
+  z-index: 1;
   gap: 50px;
   position: fixed;
   margin-bottom: 25px;
@@ -201,13 +202,21 @@ nav {
   text-transform: uppercase;
   border: 0.1rem solid black;
 }
-#veiculos, #placas{
+
+#veiculos,
+#placas {
   border-radius: 4px;
   border: none;
   outline: none;
   padding: 7px;
   text-transform: uppercase;
 
+}
+
+.form-select {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 15px;
 }
 
 @media (max-width: 900px) {
@@ -219,7 +228,7 @@ nav {
     max-height: 100%;
   }
 
-  
+
 }
 
 @media only screen and (max-width: 717px) {
