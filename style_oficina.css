@@ -70,14 +70,14 @@ nav {
   flex: 1 1 100vh;
   flex-wrap: wrap;
   z-index: 1;
-  gap: 40px;
+  gap: 50px;
   position: fixed;
   margin-bottom: 25px;
   align-items: center;
   justify-content: center;
   background: white;
-  padding-bottom: 20px;
-  padding-top: 20px;
+  padding-bottom: 25px;
+  padding-top: 25px;
   padding-right: 68px;
   padding-left: 85px;
   border-bottom: 2px solid rgb(220, 35, 3);
