@@ -70,7 +70,7 @@ nav {
   flex: 1 1 100vh;
   flex-wrap: wrap;
   z-index: 1;
-  gap: 50px;
+  gap: 40px;
   position: fixed;
   margin-bottom: 25px;
   align-items: center;
