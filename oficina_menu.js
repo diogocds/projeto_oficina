@@ -1,6 +1,9 @@
+const openMenu = document.getElementById('openMenu');
+const menu = document.getElementById('menu');
+const closeMenu = document.getElementById('closeMenu');
 
 openMenu.addEventListener('click', () => {
-    menu.style.display = 'flex'
+    menu.style.display = 'block'
     menu.style.right = (menu.offsetWidth * -1) + 'px'
     openMenu.style.display = 'none'
     setTimeout(() => {

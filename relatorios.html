@@ -16,7 +16,7 @@
 <body>
     <header class="button_initial">
         <button id="openMenu">&#9776;</button>
-        <nav id="menu">
+        <nav id="menu" class="nav-menu-telas">
             <button id="closeMenu">x</button>
             <a href="index.html"><i class="bi bi-house"></i>Home Oficina</a>
             <a href="cadastro_cliente.html"><i class="bi bi-person-fill-add"></i>Cadastro de Cliente</a>
@@ -26,43 +26,10 @@
             <a href="ordem_de_servicos.html"><i class="bi bi-wrench-adjustable"></i>Ordem de Serviços</a>
         </nav>
     </header>
-    <section class="menu-section" id="relatorio">
-        <script src="https://www.gstatic.com/charts/loader.js"></script>
-
+    <section class="menu-section">
         <fieldset>
-            <h2>Relatórios</h2>
-            <div id="myChart" style="width:100%; max-width:600px; height:400px; margin: 0 10%; display:flex; float:right;">
-
-                <script>
-                    google.charts.load('current', { 'packages': ['corechart'] });
-                    google.charts.setOnLoadCallback(drawChart);
-
-                    function drawChart() {
-
-                        // Set Data
-                        const data = google.visualization.arrayToDataTable([
-                            ['Contry', 'Mhl'],
-                            ['Pecas Motos', 54.8],
-                            ['Pecas carros', 48.6],
-                            ['Servicos motos', 44.4],
-                            ['Servicoss carros', 23.9],
-                            ['Pneus', 14.5]
-                        ]);
-
-                        // Set Options
-                        const options = {
-                            title: 'Relatorios de manutenção abril',
-                            is3D: true
-                        };
-
-                        // Draw
-                        const chart = new google.visualization.PieChart(document.getElementById('myChart'));
-                        chart.draw(data, options);
-
-                    }
-                </script>
-            </div>
-            <div class="form-grup" id="content">
+            <form class="form-grup" id="content">
+                <h2>Relatórios</h2>
                 <label for="nome-produto">Nome do Produto</label>
                 <input type="text" name="nome" class="caixa-texto" id="nome-produto" required>
                 <div>
@@ -81,14 +48,17 @@
                     <label for="valor-produto">valor do produto</label>
                     <input type="number" name="valor-produto" class="caixa-texto" id="valor-produto" required>
                 </div>
-            </div>
-            <div class="form-submit">
-                <input type="submit" value="gerar"><input type="submit" value="imprimir pdf" id="generate-pdf"><input
-                    type="submit" value="Salvar">
+            </form>
+            <div class="form-servicos">
+                <div class="form-submit button">
+                    <input type="submit" value="Cadastrar">
+                    <input type="submit" value="salvar">
+                    <input type="submit" value="editar">
+                </div>
             </div>
         </fieldset>
+        <a class="back-to-top" href="index.html"><i class="bi-house"></i></a>
     </section>
-    <a class="back-to-top" href="index.html"><i class="bi-house"></i></a>
     <script type="text/javascript" src="oficina_menu.js">
     </script>
 </body>

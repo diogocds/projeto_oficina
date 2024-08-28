@@ -12,7 +12,7 @@
 <body>
     <header class="button_initial">
         <button id="openMenu">&#9776;</button>
-        <nav id="menu">
+        <nav id="menu" class="nav-menu-telas">
             <button id="closeMenu">x</button>
             <a href="index.html"><i class="bi bi-house"></i>Home Oficina</a>
             <a href="cadastro_cliente.html"><i class="bi bi-person-fill-add"></i>Cadastro de Cliente</a>
@@ -24,39 +24,40 @@
     </header>
     <section class="menu-section" id="cadastro_veiculo">
         <fieldset>
-            <h2>Cadastro veículo</h2>
-            <div class="form-grup">
+            <form class="form-grup">
+                <h2>Cadastro veículo</h2>
                 <label for="nome">Marca / Modelo</label>
                 <input type="text" name="nome" class="caixa-texto" id="nome" required>
-                <div>
-                    <label for="endereco">Placa do Veículo</label>
-                    <input type="numero" name="numero" class="caixa-texto" id="placa-veiculo" required>
-                </div>
-                <div>
-                    <label for="nome">Ano do Veículo</label>
-                    <input type="date" name="date" class="caixa-texto" id="date" required>
-                </div>
-                <div>
-                    <label for="contato">Contato</label>
-                    <input type="number" name="contato" class="caixa-texto" id="contato" required>
-                </div>
                 <div>
                     <label for="nome">Proprietário</label>
                     <input type="text" name="proprietario" class="caixa-texto" id="proprietario" required>
                 </div>
                 <div>
+                    <div>
+                        <label for="endereco">Placa do Veículo</label>
+                        <input type="numero" name="numero" class="caixa-texto" id="placa-veiculo" required>
+                    </div>
+                    <div>
+                        <label for="nome">Ano do Veículo</label>
+                        <input type="date" name="date" class="caixa-texto" id="date" required>
+                    </div>
                     <label for="file">CNH / Documento do Veículo <br></label>
                     <input type="file" id="file" name="file" accept=".pdf, .svg,image/*">
                 </div>
-            </div>
-            <div class="form-submit">
-                <input type="submit" value="Cadastrar">
-                <input type="submit" value="salvar">
-                <input type="submit" value="editar">
-            </div>
+                <div class="form-servicos">
+                    <figure><img src="./carroOficina-bg.png" alt="foto dos Veiculos cadastrados "></figure>
+                </div>
+                <div class="form-servicos">
+                    <div class="form-submit button">
+                        <input type="submit" value="Cadastrar">
+                        <input type="submit" value="salvar">
+                        <input type="submit" value="editar">
+                    </div>
+                </div>
+            </form>
         </fieldset>
+        <a class="back-to-top" href="index.html"><i class="bi-house"></i></a>
     </section>
-    <a class="back-to-top" href="index.html"><i class="bi-house"></i></a>
     <script type="text/javascript" src="oficina_menu.js">
     </script>
 </body>
