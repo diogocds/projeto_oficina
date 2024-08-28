@@ -365,4 +365,8 @@ i {
     padding-bottom: 15px;
 
   }
+
+  .back-to-top{
+    display: none;
+  }
 }
